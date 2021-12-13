@@ -1,3 +1,5 @@
+
+
 valorA = input('Digite valor A: ')
 valorB = int(input('Digite valor B: '))
 
