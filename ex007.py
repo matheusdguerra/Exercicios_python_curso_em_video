@@ -1,9 +1,9 @@
 # ex007
-# Receba dua notas e mostre a média
+# Receba duas notas e mostre a média
 
-nota1 = int(input('Digite a primeira nota: '))
-nota2 = int(input('Digite a segunda nota: '))
+nota1 = float(input('Digite a primeira nota: '))
+nota2 = float(input('Digite a segunda nota: '))
 
 media = (nota1 + nota2) / 2
 
-print('A média é: {}'.format(media))
+print('A média é: {:.2f}'.format(media))

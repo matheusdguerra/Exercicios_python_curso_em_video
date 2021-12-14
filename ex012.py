@@ -4,5 +4,7 @@
 preco_original = float(input('Digite um preço: '))
 
 novo_preco = preco_original - (preco_original * 0.05)
+print('Novo preço é {}'.format(novo_preco))
 
+novo_preco = preco_original - (preco_original * 5 / 100)
 print('Novo preço é {}'.format(novo_preco))

@@ -49,3 +49,5 @@ sucessor = numero + 1
 antecessor = numero - 1
 
 print('O antecessor de {} é {} \nO sucessor de {} é {}'.format(numero, antecessor, numero, sucessor))
+
+print('O antecessor de {} é {} e o sucessor é {}'.format(numero, numero - 1, numero + 1))

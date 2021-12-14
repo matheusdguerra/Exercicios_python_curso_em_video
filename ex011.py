@@ -9,5 +9,5 @@ altura = float(input('Digite a altura: '))
 area = largura * altura
 litros = area / 2
 
-print('A área é {}'.format(area))
-print('A quantidade de litros é {}'.format(litros))
+print('A área é {}m²'.format(area))
+print('A quantidade de litros é {:.2f}l'.format(litros))
