@@ -1,4 +1,4 @@
-# Exercicios_python_curso_em_video
+# Exercicios python curso em video
 Exercicios python curso em video
 
 https://www.cursoemvideo.com/curso/python-3-mundo-1/
