@@ -1,6 +1,9 @@
 
 # Testes tipos primitivos
 
+# ex004
+# Receba algo é passe as informações do tipo primitivo
+
 algo = input('Digite algo: ')
 
 print('O tipo primitivo desse valor é?', type(algo))

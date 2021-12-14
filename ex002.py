@@ -1,6 +1,9 @@
 # entrada e saida de dados
 import sys
 
+# Ex02
+# Receba um nome e imprima com a mensagem 'Bem-vindo' e o nome recebido
+
 # por padrão o input lê string
 nome = input('Digite seu nome: ')
 print('Bem-vindo', nome)
