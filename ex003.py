@@ -21,24 +21,3 @@ print(algo.isalpha())
 algo = input('digite algo: ')
 print(type(algo))
 print(algo.isalnum())
-
-
-# Testes tipos primitivos
-
-algo = input('Digite algo: ')
-
-if algo.isalpha():
-    print(algo.isalpha())
-    print(type(algo))
-    print('É alpha')
-
-elif algo.isnumeric():
-    print(algo.isnumeric())
-    algo = int(algo)
-    print(type(algo))
-    print('É numerico')
-
-elif algo.isalnum():
-    print(algo.isalnum())
-    print(type(algo))
-    print('É alpah e numerico')
