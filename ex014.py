@@ -3,6 +3,6 @@
 
 temperatura_celsius = float(input('Digite a tenmperatura em Celsius: '))
 
-temperatura_fahrenheit = ((temperatura_celsius * 9/5) + 32)
+temperatura_fahrenheit = (((temperatura_celsius * 9) / 5) + 32)
 
-print('A temperatura em Fahrenheit é {}'.format(temperatura_fahrenheit))
+print('A temperatura em Fahrenheit é {}°F'.format(temperatura_fahrenheit))
