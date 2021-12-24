@@ -8,11 +8,10 @@ mediaA = float(input('Digite a media A: '))
 mediaB = float(input('Digite a media B: '))
 
 media = ((mediaA + mediaB) / 2)
-print(media)
 
 if media < 5.0:
     print('{} -> REPROVADO'.format(media))
-elif media >= 5.0 and media < 7.0:
+elif 7 > media >= 5.0:
     print('{} -> RECUPERAÇÃO'.format(media))
 else:
     print('{} -> APROVADO'.format(media))

@@ -12,13 +12,15 @@ ano_nascimento = int(input('Digite o ano de nascimento: '))
 
 ano_atual = date.today().year
 
+idade = ano_atual - ano_nascimento
+
 if ano_atual - ano_nascimento <= 9:
-    print('Mirim')
+    print('{} Anos -> Mirim'.format(idade))
 elif ano_atual - ano_nascimento <= 14:
-    print('Infantil')
+    print('{} Anos -> Infantil'.format(idade))
 elif ano_atual - ano_nascimento <= 19:
-    print('Junior')
+    print('{} Anos -> Junior'.format(idade))
 elif ano_atual - ano_nascimento <= 20:
-    print('Senior')
+    print('{} Anos -> Senior'.format(idade))
 else:
-    print('Master')
+    print('{} Anos -> Master'.format(idade))

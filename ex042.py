@@ -26,7 +26,7 @@ else:
 if maior_numero < (sobras[0] + sobras[1]):
     print('É possível fazer um triângulo')
 
-    if ldA == ldB and ldA == ldC:
+    if ldA == ldB == ldC:
         print('Triangulo Equilátero')
     elif ldA in (ldB, ldC) or ldB in (ldA, ldC):
         print('Triangulo Isósceles')

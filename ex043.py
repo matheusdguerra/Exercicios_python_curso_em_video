@@ -11,7 +11,7 @@
 # IMC = Peso ÷ (Altura × Altura)
 # IMC = 80 kg ÷ (1,80 m × 1,80 m) = 24,69 kg/m2 (Peso ideal)
 
-peso = float(input('Digite o peso em kh: '))
+peso = float(input('Digite o peso em kg: '))
 altura = float(input('Digite a altura em metros: '))
 
 imc = (peso / (altura * altura))
