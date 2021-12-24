@@ -9,7 +9,9 @@ ano_atual = date.today().year
 
 if ano_nascimento + 18 > ano_atual:
     print('Ainda vai se alistar')
+    print('Faltam {} anos'.format(18 - (ano_atual - ano_nascimento)))
 elif ano_nascimento + 18 < ano_atual:
     print('Já passou do tempo')
+    print('Passaram {} anos'.format(ano_atual - (ano_nascimento + 18)))
 else:
     print('Hora de se alistar')

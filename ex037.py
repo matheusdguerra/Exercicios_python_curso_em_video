@@ -7,6 +7,7 @@
 # mostre o numero convertido
 
 numero = int(input('Dgite um número inteiro: '))
+print('1 -> Binário\n2 -> Octal\n3 -> Hexadecimal')
 base_conversao = int(input('Digite a base de conversão: '))
 
 if base_conversao == 1:
