@@ -1,13 +1,15 @@
-# ex051
+# ex061
 # receba o primeiro termo e a razão de uma progressão aritmetica
 # mostre os 10 primeiros termos da progressão
 
 primeiro_termo = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razão: '))
 
-decimo = primeiro_termo + (10 - 1) * razao
+decimo = 0
 
-for c in range(primeiro_termo, decimo + 1, razao):
-    print(c, end='--> ')
+while decimo != 10:
+    print(primeiro_termo, end='--> ')
+    primeiro_termo += razao
+    decimo += 1
 
 print('FIM!!!')

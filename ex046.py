@@ -5,7 +5,7 @@
 from time import sleep
 from emoji import emojize   # https://www.webfx.com/tools/emoji-cheat-sheet/ | https://pypi.org/project/emoji/
 
-for c in range(10, 0, -1):
+for c in range(10, -1, -1):
     print(c)
     sleep(1)
 
