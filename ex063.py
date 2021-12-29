@@ -3,13 +3,13 @@
 
 quantidade = int(input('Digite um número: '))
 
-fibonacci = [0, 1]
-print(fibonacci)
+lista_fibonacci = [0, 1]
 
-while quantidade != 0:
-    print(fibonacci[0], end='--> ')
-    fibonacci[0] = fibonacci[0] + fibonacci[1]
+while quantidade != 2:
 
+    fibonacci = lista_fibonacci[-1] + lista_fibonacci[-2]
+    lista_fibonacci.append(fibonacci)
     quantidade -= 1
 
+print(lista_fibonacci)
 print('Fim!!!')

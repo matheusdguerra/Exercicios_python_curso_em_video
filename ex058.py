@@ -3,25 +3,23 @@
 # gere um numero aleatório de 0 a 10.
 # Tente adivinhar até acertar e mostre a quantidade de tentaivas.
 
-from random import choices, randint
-from time import sleep
+from random import randint
 
 numero_aleatorio = randint(0, 10)
 
 tentativas = 0
-flag = True
+flag = False
 
-while flag == True:
+while not flag:
     numero = int(input('Digite um numero entre 0 e 10: '))
-
-    print('Processando...')
-    sleep(1)
-
+    tentativas += 1
     if numero == numero_aleatorio:
-        print('Você acertou após {} tentativas!'.format(tentativas + 1))
-        flag = False
+        print('Você acertou após {} tentativas!'.format(tentativas))
+        flag = True
     else:
-        print('Você errou!\nTente novamente')
-        tentativas += 1
+        if numero_aleatorio > numero:
+            print('Mais...')
+        else:
+            print('Menos...')
 
 print('Numero do computador: {}\nNumero do usuário: {}'.format(numero_aleatorio, numero))
