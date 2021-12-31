@@ -1,7 +1,7 @@
 # ex071
-# criar um programa que simule um caixa eletronico
-# receba um valor interio a ser sacado
-# mostra quandas cedulas serão entregues
+# Criar um programa que simule um caixa eletrônico
+# receba um valor inteiro a ser sacado
+# mostre quantas cedulas serão entregues
 # Notas -> 50R$, 20R$, 10R$ e 1R$
 
 print('=' * 35)

@@ -1,6 +1,6 @@
 # ex069
 # leia diversas idades e sexos
-# perguntar se deseja ou não coninuar o cadastros de novas pessoas
+# Perguntar se deseja ou não coninuar o cadastros de novas pessoas
 # No final mostre:
 # -> Quantas pessoas tem mais de 18 anos
 # -> Quantos homens cadastrados

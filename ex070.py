@@ -1,5 +1,5 @@
 # ex070
-# leia nome e preço de vários produtos
+# Leia nome e preço de vários produtos
 # O programa deve eprguntar se deseja continuar.
 # No fInal mostre:
 # -> Qual o total gasto na compra
@@ -29,7 +29,6 @@ while True:
         opcao = str(input('Deseja continuar [S/N]: ')).upper().strip()[0]
     if opcao == 'N':
         break
-
 
 print(f'Total gasto: {total_gasto:.2f}R$')
 print(f'Quantidade de produtos maiores de 1000.00 R$: {maiores_1000}')

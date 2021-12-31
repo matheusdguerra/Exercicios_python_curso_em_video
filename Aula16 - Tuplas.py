@@ -1,9 +1,6 @@
 # Variaveis compostas (TUPLAS)
 # Tupals são imutáveis
 
-from typing import Counter
-
-
 lanche = ('Xis', 'Suco', 'Pizza', 'Pudim')
 print(len(lanche))
 

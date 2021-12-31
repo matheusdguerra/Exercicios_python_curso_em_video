@@ -1,6 +1,6 @@
 # ex068
 # jogue par ou impar com o computador
-# O jogo só termina quando o jogador perder
+# O jogo só irá termina quando o jogador perder
 
 from random import randint, choice
 
