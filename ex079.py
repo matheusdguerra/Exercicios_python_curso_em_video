@@ -1,6 +1,6 @@
 # ex079
-# receba vaários valores e cadastreos em uma lista.
-# Pergunte s eo usuário desej adigitar um novo valor [S/N]
+# receba vários valores e cadastre-os em uma lista.
+# Pergunte se o usuário deseja digitar um novo valor [S/N]
 # caso o núemro já exista na lista ele não deve ser adicionado
 # no final mostrs os valores únicos digitados em ordem crescente
 
