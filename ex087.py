@@ -4,7 +4,7 @@
 # -> a soma dos valores pares
 # -> a soma dos valores da terceira coluna
 # o maior valor da segunda linha
-
+'''
 lista = []
 lista_0 = []
 lista_1 = []
@@ -49,3 +49,39 @@ print(f'O maior valor da segunda linha é {maior_segunda_linha}')
 l = 0
 for c in range(0, 3):
     print(lista[c][l], lista[c][l+1], lista[c][l+2], end='\n')
+'''
+
+lista = [[0, 0, 0], [0, 0, 0], [0, 0, 0, ]]
+
+soma_pares = soma_terceira_coluna = maior_segunda_linha = 0
+
+# Leitura dos dados
+for l in range(0, 3):
+    for c in range(0, 3):
+        lista[l][c] = int(input(f'Digite o valor para [{l}, {c}]º número: '))
+
+# Processamento das informações
+for l in lista:
+    for c in l:
+        if c % 2 == 0:
+            soma_pares += c
+
+for l in lista:
+    soma_terceira_coluna += l[2]
+
+for c in lista[1]:
+    if c == 0:
+        maior_segunda_linha = c
+    else:
+        if maior_segunda_linha < c:
+            maior_segunda_linha = c
+
+# Saída do resultado
+for l in range(0, 3):
+    for c in range(0, 3):
+        print(f'[{lista[l][c]:^5}]', end='')
+    print()
+
+print(f'A soma dos valores pares é {soma_pares}')
+print(f'A soma dos valores da terceira coluna é {soma_terceira_coluna}')
+print(f'O maior valor da segunda linha é {maior_segunda_linha}')

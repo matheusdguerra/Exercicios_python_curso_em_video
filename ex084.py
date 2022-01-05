@@ -33,8 +33,7 @@ print(lista)
 
 for c in lista:
     if quantidade_digitados == 0:
-        maior_peso = c[1]
-        menor_peso = c[1]
+        maior_peso = menor_peso = c[1]
     else:
         if c[1] >= maior_peso:
             maior_peso = c[1]

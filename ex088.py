@@ -6,20 +6,21 @@
 from random import sample
 from time import sleep
 
-print_jogo = 1
+print_jogo = 0
 lista_valores_papite = []
 
 palpites = int(input('Quantas jogadas deseja simular? '))
 
 for c in range(0, palpites):
 
-    valores_palpite = sample(range(0, 60), 6)
+    valores_palpite = sample(range(1, 60), 6)
     lista_valores_papite.append(valores_palpite)
     # print(lista_valores_papite)
     # lista_valores_papite.clear()
+
 for c in lista_valores_papite:
     c.sort()
-    print(f'Jogo {print_jogo}:  {c}')
+    print(f'Jogo {print_jogo+1}:  {c}')
     sleep(1)
     print_jogo += 1
 print(lista_valores_papite)
