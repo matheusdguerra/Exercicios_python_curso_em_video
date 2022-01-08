@@ -23,7 +23,7 @@ while True:
     cadastro_jogador['total_gols'] = totgols
 
     lista_detalhada_jogador.append(cadastro_jogador.copy())
-    print(lista_detalhada_jogador)
+
     lista_gols.clear()
     totgols = 0
 
@@ -37,13 +37,15 @@ while True:
 
 # Saída de dados
 print('=-' * 50)
-print(lista_detalhada_jogador)
-print('=-' * 50)
+# print(f'{"No.":<4}{"NOME":<10}{"GOLS":<18}{"TOTAL GOLS":<8}')
+print('Cod ', end='')
+for i in cadastro_jogador.keys():
+    print(f'{i:<19}', end='')
+print()
 
-print(f'{"No.":<4}{"NOME":<10}{"GOLS":<18}{"TOTAL GOLS":<8}')
 print('-' * 50)
 for idx, c in enumerate(lista_detalhada_jogador):
-    print(f'{idx:<4}{c["nome"]:<10}{str(c["gols_por_partida"]):<18}{c["total_gols"]:<8}')
+    print(f'{idx:<3}{c["nome"]:<20}{str(c["gols_por_partida"]):<19}{c["total_gols"]:<19}')
 print('-' * 50)
 
 
@@ -58,7 +60,7 @@ while True:
     # saída do resultado
     if no < (len(lista_detalhada_jogador)):
         print(f'DETALHAMNETO DO JOGADOR {lista_detalhada_jogador[no]["nome"]}')
-        print(lista_detalhada_jogador[no])
+        # print(lista_detalhada_jogador[no])
         for k, c in enumerate(lista_detalhada_jogador[no]["gols_por_partida"]):
             print(f'No jogo {k+1} fez {c} gols.')
     else:

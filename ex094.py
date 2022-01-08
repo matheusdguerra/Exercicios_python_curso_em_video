@@ -15,6 +15,7 @@ soma_idade = 0
 
 while True:
     # Leitura do numero, teste existe na lista e append
+    # biblioteca_pessoa.clear() # com ou sem o clear() ocorre a mesma situação
     biblioteca_pessoa['nome'] = str(input('Nome: '))
     while True:
         sexo = str(input('Sexo [M/F]: '))
@@ -26,7 +27,6 @@ while True:
 
     biblioteca_pessoa['idade'] = int(input('Idade: '))
 
-    print(biblioteca_pessoa)
     print('=-' * 30)
 
     lista_pessoas.append(biblioteca_pessoa.copy())
@@ -36,6 +36,8 @@ while True:
         flag_saida_input = str(input('Deseja continuar? [S/N]')).upper().strip()
         if flag_saida_input in 'SN':
             break
+        else:
+            print('Digite apenas [S ou N]')
     if flag_saida_input in 'N':
         break
 
@@ -61,7 +63,7 @@ print(f'Lista total\n {lista_pessoas}')
 print('=-' * 60)
 
 print(f'Foram cadastradas {len(lista_pessoas)} pessoas')
-print(f'Media das idades {media_idades}')
+print(f'Media das idades {media_idades:.2f}')
 print(f'A lista de mulheres é:', end=' ')
 for c in lista_mulheres:
     print(c, end=' ')
