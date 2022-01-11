@@ -12,7 +12,7 @@
 def escreva(p):
     t = len(p) + 4
     print('~' * t)
-    print(f'  {p}  ')
+    print(f'  {p}')
     # {:^20}
     print('~' * t)
 

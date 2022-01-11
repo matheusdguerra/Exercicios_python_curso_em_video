@@ -23,6 +23,8 @@ lista_contador = []
 
 
 def contador(i, f, p):
+    print('=-'*25)
+    lista_contador.clear()
     if f < i:
         if p < 0:
             for c in range(i, f-1, p):
@@ -37,32 +39,22 @@ def contador(i, f, p):
     else:
         if p == 0:
             p = 1
+        if p < 0:
+            p = (p * -1)
         for c in range(i, f+1, p):
             lista_contador.append(c)
 
     for c in lista_contador:
-        print(c, end=' ')
+        sleep(0.3)
+        print(c, end=' ', flush=True)
     print('Fim!')
 
 
-print('=-'*25)
-print('Contagem de 1 até 10, de 1 em 1')
-for c in range(1, 11):
-    print(c, end=' ', flush=True)
-    sleep(0.3)
-print('Fim!')
-
-print('=-'*25)
-print('Contagem de 10 até 0, de 2 em 1')
-for c in range(10, -1, -1):
-    print(c, end=' ', flush=True)
-    sleep(0.3)
-print('Fim!')
-
-
-print('=-'*25)
 inicio = int(input('Inicio: '))
 fim = int(input('Fim: '))
 passo = int(input('Passo: '))
 
+
 contador(inicio, fim, passo)
+contador(1, 10, 1)
+contador(10, 0, 2)
