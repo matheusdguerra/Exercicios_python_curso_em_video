@@ -80,7 +80,7 @@ def teste2(b):
 
 
 a = 5  # variavel global
-teste(a)
+teste2(a)
 print(f'A fora vale {a}: ')  # 5
 # print(f'B fora vale {b}: ')  # ERRO
 # print(f'C fora vale {c}: ')  # ERRO
@@ -93,13 +93,13 @@ def teste3(b):
     a = 8  # variavel local
     b += 4  # variavel local
     c = 2  # variavel local
-    print(f'A dentro vale {a}: ')  # 4
+    print(f'A dentro vale {a}: ')  # 8
     print(f'B dentro vale {b}: ')  # 9
     print(f'C dentro vale {c}: ')  # 2
 
 
 a = 5  # variavel global
-teste(a)
+teste3(a)
 print(f'A fora vale {a}: ')  # 8
 # print(f'B fora vale {b}: ')  # ERRO
 # print(f'C fora vale {c}: ')  # ERRO
@@ -141,6 +141,7 @@ f3 = fatorial()
 print(f'Os resoltados são {f1} {f2} {f3}')
 
 # ------------------------------------------------------
+
 
 def par(n=0):
     if n % 2 == 0:

@@ -6,21 +6,20 @@
 # -> 48 -> VOTO OBRIGATORIO
 # -> 108 anos -> VOTO OPCIONAL
 
-from datetime import date, datetime
-
 
 def calcula_idade(dt):
-    if idade < 15:
-        return('NÃO VOTA')
-    elif idade > 16 and idade < 65:
-        return('VOTO OBRIGATÓRIO')
-    elif idade > 65:
-        return('VOTO OPCIONAL')
+    from datetime import date, datetime
+
+    ano_atual = date.today().year
+    idade = ano_atual - dt
+
+    if idade < 16:
+        return(f'Com {idade} anos: NÃO VOTA')
+    elif 16 <= idade < 18 or idade > 65:
+        return(f'Com {idade} anos: VOTO OPCIONAL')
+    else:
+        return(f'Com {idade} anos: VOTO OBRIGATÓRIO')
 
 
-data_nascimento = int(input('Digite o ano de nascimento: '))
-
-ano_atual = date.today().year
-idade = ano_atual - data_nascimento
-
-print(f'Com {idade} anos: {calcula_idade(data_nascimento)}')
+data_nascimento = (int(input('Digite o ano de nascimento: ')))
+print(calcula_idade(data_nascimento))

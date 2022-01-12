@@ -16,35 +16,25 @@
 
 def fatorial(num=1, show=False):
     '''
-    - Calcula o fatorial de um número
+    -- Calcula o fatorial de um número
     -- Param num: O número a ser calculado
     -- Param show: (opcional) Mostra ou não a conta
     -- return: O valor fatorial de um número num
     '''
 
-    lista_conta.clear()
     f = 1  # variavel local
     for c in range(num, 0, -1):
         f *= c
         if show:
-            lista_conta.append(c)
-    return [f, lista_conta]  # retorna fatorial e valores no formato lista
+            if c == 1:
+                print(f'{c}', end=' = ')
+            else:
+                print(f'{c}', end=' x ')
 
+    return f  # retorna fatorial e valores no formato lista
 
-lista_conta = []
 
 help(fatorial)
 n = int(input('Digite um numero: '))  # variavel global
 
-calculo = fatorial(2, True)  # variavel calculo recebe o retorno do def fatorial
-
-
-for c in calculo[1]:
-    if c == 1:
-        print(f'{c}', end=' = ')
-    else:
-        print(f'{c}', end=' x ')
-
-print(f'{calculo[0]}')
-
-# print(f'Fatrinal de {n} é {fatorial(n,True)}')
+print(fatorial(n))  # variavel calculo recebe o retorno do def fatorial
